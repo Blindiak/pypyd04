@@ -1,7 +1,7 @@
 import pandas as p
 
 def youngestFellah(data, year):
-    info = data.loc[data['Year'] == year and data['Sex'] == 'M']
+    info = data.loc[data['Year'] == year]
     m = info.loc[info['Sex'] == 'M']
     f = info.loc[info['Sex'] == 'F']
     y_m = m['Age'].min()
