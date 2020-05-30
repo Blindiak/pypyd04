@@ -1,5 +1,6 @@
 import pandas as p
 
+
 def youngestFellah(data, year):
     info = data.loc[data['Year'] == year]
     m = info.loc[info['Sex'] == 'M']

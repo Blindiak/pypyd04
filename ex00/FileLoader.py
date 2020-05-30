@@ -20,4 +20,5 @@ class FileLoader:
 if __name__ == "__main__":
     loader = FileLoader()
     data = loader.load("../athlete_events.csv")
+    loader.display(data, 12)
     loader.display(data, -12)
